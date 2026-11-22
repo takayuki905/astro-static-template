@@ -46,3 +46,7 @@ import TourCard from '../components/TourCard';
 - `src/components/`: AstroおよびReact/TSXコンポーネント
 - `public/`: CSSや画像などの静的ファイル
 - `astro.config.mjs`: Astroの静的ビルド設定
+
+## 公式サイト
+
+[Astro](https://astro.build/)
