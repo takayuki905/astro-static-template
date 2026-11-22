@@ -1,0 +1,28 @@
+.card {
+  border: 1px solid #ddd;
+  padding: clamp(16px, 2vw, 24px);
+}
+
+.cardTitle {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  font-weight: bold;
+}
+
+.cardPrice {
+  color: #d32f2f;
+}
+
+.favoriteButton {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #777;
+  border-radius: 0.25rem;
+  background: white;
+  color: inherit;
+  cursor: pointer;
+}
+
+.isFavorite {
+  border-color: #d32f2f;
+  background: #d32f2f;
+  color: white;
+}

@@ -1,8 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import TourCard from '../components/TourCard';
 ---
 
 <BaseLayout title="ホーム | My Astro App" activePage="home">
   <h1>ホーム</h1>
   <p>トップページのモックです。</p>
+  <TourCard title="京都散策ツアー" price={9800} client:load />
 </BaseLayout>
