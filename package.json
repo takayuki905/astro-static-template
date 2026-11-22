@@ -1,0 +1,26 @@
+{
+  "name": "astro-static-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takayuki905/astro-static-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/takayuki905/astro-static-template/issues"
+  },
+  "homepage": "https://github.com/takayuki905/astro-static-template#readme",
+  "devDependencies": {
+    "astro": "^5.18.2"
+  }
+}
