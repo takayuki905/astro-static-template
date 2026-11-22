@@ -8,6 +8,9 @@ yarn-error.log*
 # Astroのビルド出力先（ソースコードからいつでも生成できるため除外）
 dist/
 
+# Astroが生成する型定義やキャッシュ
+.astro/
+
 # 環境変数・シークレット情報（APIキーなどが漏洩しないよう絶対に除外）
 .env
 .env.local
