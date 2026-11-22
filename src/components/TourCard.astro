@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+  price: number;
+}
+
+const { title, price } = Astro.props;
+---
+
+<article class="card">
+  <h2 class="card__title">{title}</h2>
+  <p class="card__price">{price}円〜</p>
+</article>
+
+<style lang="scss">
+  .card {
+    border: 1px solid #ddd;
+    padding: clamp(16px, 2vw, 24px);
+
+    &__title {
+      font-size: clamp(1.125rem, 2vw, 1.25rem);
+      font-weight: bold;
+    }
+
+    &__price {
+      color: #d32f2f;
+    }
+  }
+</style>
