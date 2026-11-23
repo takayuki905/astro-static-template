@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TourCard from '../components/TourCard';
+import { pages, type PageConfig } from '../data/pages';
+
+export function getStaticPaths() {
+  return pages.map((page: PageConfig) => ({
+    params: { slug: page.slug },
+    props: { pageTitle: page.pageTitle },
+  }));
+}
+
+interface Props {
+  pageTitle: string;
+}
+
+const { pageTitle } = Astro.props as Props;
+---
+
+<BaseLayout title="{pageTitle} | My Astro App" activePage="home">
+  <h1>ホーム</h1>
+  <p>トップページのモックです。</p>
+  <TourCard title="京都散策ツアー" price={9800} client:load />
+</BaseLayout>
